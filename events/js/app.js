@@ -23,14 +23,14 @@ const createFavouriteAlbumListItem = function (form) {
   bandArtist.textContent = form.bandArtist.value;
   favouriteAlbumListItem.appendChild(bandArtist);
 
-  const album = document.createElement('h1');
+  const album = document.createElement('h2');
   album.textContent = form.album.value;
-  console.dir(event)
+  // console.dir(event)
   favouriteAlbumListItem.appendChild(album);
 
-  const category = document.createElement('p');
-  category.textContent = form.category.value;
-  favouriteAlbumListItem.appendChild(category);
+  const genre = document.createElement('h3');
+  genre.textContent = form.genre.value;
+  favouriteAlbumListItem.appendChild(genre);
 
   return favouriteAlbumListItem;
 }

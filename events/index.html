@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <h1> Create Your Favourite Albums List </h1>
     <meta charset="utf-8">
     <title>Favourite Album List App</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/app.js"></script>
   </head>
   <body>
-    <form id="new-item-form">
+    <form id="new-item-form"><h2>
       <div id="form-wrapper">
         <div class="form-item">
           <label for="bandArtist" class="primary">Band or Artist</label>
@@ -20,8 +21,8 @@
         </div>
 
         <div class="form-item">
-          <label for="category" class="primary">Category</label>
-          <select id="category">
+          <label for="genre" class="primary">Genre</label>
+          <select id="genre">
             <option value="" disabled selected></option>
             <option value="Soul">Soul</option>
             <option value="Rock">Rock</option>
@@ -29,15 +30,14 @@
             <option value="EDM">EDM</option>
             <option value="Hip-Hop">Hip Hop</option>
             <option value="Classical">Classical</option>
+            <option value="2 Tone">2 Tone</option>
           </select>
         </div>
       </div>
       <input type="submit" value="save"/>
-    </form>
-
-    <button id="delete-all">Delete All</button>
-
+    </h2></form>
     <h1>Favourite Albums</h1>
     <ul id="favourite-album-list"></ul>
+    <button id="delete-all">Delete All</button>
   </body>
 </html>
